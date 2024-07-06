@@ -37,7 +37,8 @@ fi
 echo "Đang khởi tạo server V2ray"
 sudo docker run --name v2ray -d -p 8081:8081 thuonghai2711/v2ray-azure-web:latest
 clear
-IP=$(curl -s ifconfig.me)
+# IP=$(curl -s ifconfig.me)
+IP=ptit.io.vn
 echo "Đang kiểm tra kết nối tới v2ray server (đảm bảo VPS đã mở port 80)"
 sleep 2
 echo -n "- Đang khởi tạo kết nối: " && if curl -s --connect-timeout 1 $IP | grep -q Bad; then echo -e "$(tput setaf 2)ONLINE - Ping thành công đến IP$(tput sgr0)"; else echo -e "$(tput setaf 1)OFFLINE - Không thể Ping đến IP, vui lòng mở port 80$(tput sgr0)"; fi
