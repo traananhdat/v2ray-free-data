@@ -28,7 +28,7 @@
  ```
  - Gỡ cài đặt:
  ```console  
- curl -skLO https://raw.githubusercontent.com/kmille36/v2ray-free-data/main/go-cai-dat-v2ray.sh && sudo bash go-cai-dat-v2ray.sh
+ curl -skLO https://raw.githubusercontent.com/traananhdat/v2ray-free-data/main/go-cai-dat-v2ray.sh && sudo bash go-cai-dat-v2ray.sh
  
  ```
  Kết quả demo trên VPS:
